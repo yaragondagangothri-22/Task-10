@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MediCare Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🩺 MediCare Online Pharmacy</h1>
+<input type="text" id="search" placeholder="Search medicine..." onkeyup="searchProduct()">
+</header>
+
+<h2 class="title">Health Products</h2>
+
+<div class="products" id="productList">
+
+<div class="product">
+<img src="https://via.placeholder.com/150">
+<h3>Paracetamol</h3>
+<p>₹50</p>
+<button onclick="addToCart('Paracetamol',50)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/150">
+<h3>Vitamin C</h3>
+<p>₹120</p>
+<button onclick="addToCart('Vitamin C',120)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/150">
+<h3>Hand Sanitizer</h3>
+<p>₹80</p>
+<button onclick="addToCart('Hand Sanitizer',80)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/150">
+<h3>Face Mask</h3>
+<p>₹40</p>
+<button onclick="addToCart('Face Mask',40)">Add to Cart</button>
+</div>
+
+</div>
+
+<h2 class="title">🛒 Cart</h2>
+<ul id="cart"></ul>
+
+<h3>Total: ₹<span id="total">0</span></h3>
+
+<script src="script.js"></script>
+
+</body>
+</html>
